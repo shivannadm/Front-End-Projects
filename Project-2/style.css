@@ -5,6 +5,7 @@
 }
 
 header{
+    margin: 35px;
     display: flex;
     position: relative;
 }
@@ -19,7 +20,10 @@ header{
 }
 .nav-links{
     display: flex;
+    gap: 12px;
+}
+.nav-links a{
     text-decoration: none;
-    color: aliceblue;
-    text-c
+    color:black;
+    font
 }
