@@ -58,6 +58,8 @@ header{
     transform: scaleX(1);
 } */
 
+.nav-links a
+
 button{
     position: relative;
     font-size: 1.1rem;
