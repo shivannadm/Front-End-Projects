@@ -22,7 +22,6 @@ header{
 .nav-bar{
     width: 100%;
     height: 50px;
-    background-color: aqua; 
     display: flex;
     justify-content: space-between;
     align-items: center;
