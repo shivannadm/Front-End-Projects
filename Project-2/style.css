@@ -58,7 +58,9 @@ header{
     transform: scaleX(1);
 } */
 
-.nav-links a
+.nav-links a:hover{
+    color: aqua;
+}
 
 button{
     position: relative;
