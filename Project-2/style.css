@@ -62,18 +62,3 @@ header{
     border: none;
 }
 
-.wrapper{
-    box-sizing: border-box;
-    display: flex;
-    width: auto;
-    height: 100px;
-    background-color: gray;
-    justify-content: center;
-    align-items: center;
-}
-
-.h2{
-    align-items: center;
-    justify-content: center;
-
-}
