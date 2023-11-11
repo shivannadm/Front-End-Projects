@@ -41,7 +41,7 @@ header{
     color: aqua;
 }
 
-button{
+.nav-btn{
     position: relative;
     font-size: 1.1rem;
     border-radius: 5px;
@@ -57,7 +57,7 @@ button{
     border: 1px solid white;
 }
 
-button:hover{
+.nav-btn:hover{
     background-color: rgb(38, 47, 168);
     border: none;
 }
