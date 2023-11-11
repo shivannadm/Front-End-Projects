@@ -62,3 +62,6 @@ header{
     border: none;
 }
 
+.wrapper{
+    display: flex;
+}
