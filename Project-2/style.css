@@ -1,67 +1,81 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("bg-img.png");  
-}
-
-header{
-    margin: 35px;
+body {
     display: flex;
-    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('bg-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.logo{
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-}
-.nav-bar{
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.nav-links{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.nav-links a{
-    text-decoration: none;
-    color:white;
-    font-size: 1.3rem;
+    z-index: 99;
 }
 
-.nav-links a:hover{
-    color: aqua;
-}
-
-.nav-btn{
-    position: relative;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75px;
-    height: 35px;
+.logo {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
     cursor: pointer;
-    margin-left: 20px;
-    background-color:transparent;
+}
+
+.nav-bar a {
+    position: relative;
+    font-size: 1.1em;
     color: white;
-    border: 1px solid white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
 }
 
-.nav-btn:hover{
-    background-color: rgb(38, 47, 168);
-    border: none;
+.nav-bar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
 }
 
-.wrapper{
-    display: flex;
+.nav-bar a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.nav-bar .login-btn {
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.nav-bar .login-btn:hover {
+    background: white;
+    color: #162938;
 }
