@@ -99,6 +99,20 @@ header {
     padding: 40px;
 }
 
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size:2em ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-box h2{
     font-size:2rem;
     color:#162938;
@@ -187,7 +201,7 @@ header {
 }
 
 .login-reg{
-    font-size: .9em;
+    font-size: 1em;
     color: #162938;
     text-align: center;
     font-family: 500;
