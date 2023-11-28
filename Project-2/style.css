@@ -95,7 +95,7 @@ header {
     align-items: center;
     overflow: hidden;
     transition: height .2s ease;
-    /* transform: scale(0); */
+    transform: scale(0);
 }
 
 .wrapper.active{
