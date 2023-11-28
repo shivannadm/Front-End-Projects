@@ -93,7 +93,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     transition: height .2s ease;
     /* transform: scale(0); */
 }
