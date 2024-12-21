@@ -3,13 +3,14 @@
 <section class="upload-section">
     <h2>Upload Your Dataset</h2>
     <p>Please upload your stock dataset in CSV format for AI analysis.</p>
+
     <form id="upload-form" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <label id="file-label" for="file-input">Choose a file</label>
         <input type="file" id="file-input" name="dataset">
         <button type="submit">Upload</button>
     </form>
-    
+
 </section>
 <style>
     body{
