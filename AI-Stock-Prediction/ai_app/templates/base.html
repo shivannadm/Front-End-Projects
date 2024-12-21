@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Stock Price Prediction</title>
+    <link rel="stylesheet" href='ai_app\static\css\style.css'>
+    <script src='ai_app\static\js\main.js'></script>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #32353a, #02092d);
+            color: #ffffff;
+        }
+        header {
+            background: #161B22;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            color: #58A6FF;
+            font-size: 1.5em;
+        }
+        .empo{
+            font-size: 2.5em;
+            margin-bottom: 2.5rem;
+        
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #C9D1D9;
+            font-size: 1em;
+        }
+        nav ul li a:hover {
+            color: #58A6FF;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #1F6FEB, #238636);
+            color: white;
+        }
+        .hero h2 {
+            font-size: 2em;
+        }
+        .hero p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        .hero .hero-buttons {
+            margin-top: 20px;
+        }
+        .hero .hero-buttons a {
+            text-decoration: none;
+            color: white;
+            background: #238636;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .hero .hero-buttons a:hover {
+            background: #2EA043;
+        }
+        main {
+            padding: 20px;
+            min-height: 60vh;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #161B22;
+            color: #C9D1D9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>AI Stock Prediction</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'upload_dataset' %}">Upload Dataset</a></li>
+                <li><a href="{% url 'select_dataset' %}">Select Dataset</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="empo">
+            Empowering Your Stock Predictions with AI
+        </div>
+        <p>Leverage the power of AI for accurate stock price forecasting.</p>
+        <div class="hero-buttons">
+            <a href="{% url 'upload_dataset' %}">Upload Your Dataset</a>
+            <a href="{% url 'select_dataset' %}">Select Existing Dataset</a>
+        </div>
+    </section>
+
+    <!-- Dynamic Content Block -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <h2>Stock market is subjected to the risk and high volatitlity</h2>
+    <p>&copy; AI forecast for Investor Decision | Is makes investments easier</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+{% block content %}
+<section class="select-section">
+    <h2>Select an Existing Dataset</h2>
+    <p>Choose a dataset from the available options to proceed with predictions.</p>
+    <form action="{% url 'select_dataset' %}" method="post">
+        {% csrf_token %}
+        <label for="dataset">Choose Dataset:</label>
+        <select id="dataset-select">
+            <option value="">--Select Dataset--</option>
+            <option value="dataset1">Dataset 1</option>
+            <option value="dataset2">Dataset 2</option>
+        </select>
+        
+        <button type="submit">Proceed</button>
+    </form>
+</section>
+<style>
+    body{
+        text-align: center;
+        padding: 50px 20px;
+        background: linear-gradient(to right, #1F6FEB, #238636);
+        color: white;
+    }
+    .select-section {
+        text-align: center;
+        margin: 40px 20px;
+    }
+    .select-section h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .select-section p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+    .select-section select {
+        padding: 8px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .select-section button {
+        background: #238636;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .select-section button:hover {
+        background: #2EA043;
+    }
+</style>
+{% endblock %}

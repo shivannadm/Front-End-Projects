@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.input-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-block label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+input[type="file"], select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00adb5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cta-btn:hover {
+    background: #393e46;
+}

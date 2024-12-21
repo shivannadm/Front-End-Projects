@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="content-section">
+
+    <div class="scrolling-text">
+        
+            <marquee direction="left">
+                <span>NIFTY Smallcap 100 18714.3</span> 
+                <span class="profit">418.8 (4.5%)</span> |
+                <span>Nifty 50 23587.50</span> 
+                <span class="loss">-364.20 (-1.52%)</span> |
+                <span>NIFTY Bank 50759.2</span> 
+                <span class="loss">-816.5 (-1.58%)</span> |
+                <span>NIFTY Midcap 100 56906.75</span> 
+                <span class="loss">-1649.5 (-2.82%)</span> |
+                <span>NIFTY Smallcap 100 18714.3</span> 
+                <span class="profit">418.8 (4.5%)</span> |
+                <span>NIFTY Bank 50759.2</span> 
+                <span class="loss">-816.5 (-1.58%)</span> |
+                <span>NIFTY Smallcap 100 18714.3</span> 
+                <span class="profit">418.8 (4.5%)</span> |
+                <span>Nifty 50 23587.50</span> 
+                <span class="loss">-364.20 (-1.52%)</span> |
+                <span>NIFTY Bank 50759.2</span> 
+                <span class="loss">-816.5 (-1.58%)</span> |
+                <span>NIFTY Midcap 100 56906.75</span> 
+                <span class="loss">-1649.5 (-2.82%)</span> |
+                <span>NIFTY Smallcap 100 18714.3</span> 
+                <span class="profit">418.8 (4.5%)</span> |
+                <span>NIFTY Bank 50759.2</span> 
+                <span class="loss">-816.5 (-1.58%)</span>
+            </marquee>
+       
+    </div>
+
+    <br>
+    <h2>Welcome to the AI Stock Price Prediction Platform</h2>
+    <p>Explore predictive insights powered by advanced AI algorithms. Upload your dataset or choose from existing datasets to get started.</p>
+    
+
+    <!-- <div class="cta-buttons">
+        <form action="{% url 'upload_dataset' %}" method="get">
+            <button type="submit">Upload Your Dataset</button>
+        </form>
+        <form action="{% url 'select_dataset' %}" method="get">
+            <button type="submit">Select Existing Dataset</button>
+        </form>
+    </div> -->
+</section>
+<style>
+    .content-section {
+        text-align: center;
+        margin: 40px 20px;
+    }
+    .content-section h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    .content-section p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+    .cta-buttons button {
+        background: #238636;
+        color: white;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .cta-buttons button:hover {
+        background: #2EA043;
+    }
+    .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        .loss {
+            color: red;
+        }
+
+        .profit {
+            color: green;
+        }
+
+</style>
+{% endblock %}
