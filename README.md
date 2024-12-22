@@ -122,6 +122,13 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
+## 📲 **Contact**
+For inquiries or collaboration opportunities, feel free to reach out:
+- **Email**: shivannadm6@gmail.com
+- **LinkedIn**: [Shivanna DM](https://www.linkedin.com/in/shivannadm)
+
+---
+
 
 ## 🌟 **Acknowledgments**
 - TensorFlow & Keras for ML model.
