@@ -1,3 +1,5 @@
+# Folder: AI-Stock-Prediction 
+
 # 📊 AI-Powered Stock Price Prediction with Django & CNN-LSTM
 
 This project integrates a **CNN-LSTM** deep learning model with a **Django web application** to predict stock prices based on historical data. Users can upload their own datasets or select from preloaded datasets to visualize stock price trends and future predictions.
@@ -120,10 +122,6 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 ---
 
-## 📄 **License**
-This project is licensed under the **MIT License**.
-
----
 
 ## 🌟 **Acknowledgments**
 - TensorFlow & Keras for ML model.
